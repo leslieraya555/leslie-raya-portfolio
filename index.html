@@ -1,513 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Leslie Raya | Portfolio</title>
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leslie Raya’s software engineering portfolio, featuring Linux systems, applied machine learning, and full-stack projects.">
+  <meta name="theme-color" content="#f8f8f2">
+  <title>Leslie Raya · Software Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <a href="#home" class="logo">Leslie Raya</a>
-
-      <button class="menu-toggle" aria-label="Open navigation menu">
-        ☰
-      </button>
-
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#development">Professional Development</a></li>
-        <li><a href="#beyond">Beyond Coding</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#home">Leslie Raya</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <!-- HOME -->
-    <section id="home" class="section hero">
-      <div class="hero-content">
-        <p class="eyebrow">Senior Computer Science Student at SFSU</p>
-
-        <h1>Hi, I'm Leslie Raya.</h1>
-
-        <h2>
-          Computer Science Student | Software Engineering | Operating Systems |
-          Full-Stack & Data Projects
-        </h2>
-
-        <p class="hero-text">
-          I build responsive, accessible, and functional applications while growing my skills in
-          front-end development, back-end programming, operating systems, data structures, AI, and
-          collaborative software engineering.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
-          <a href="Leslie_Raya_Resume.pdf" class="btn outline" download>Download Resume</a>
+  <main class="wrap" id="main">
+    <section class="intro" id="home" aria-labelledby="name">
+      <div>
+        <p class="eyebrow">San Francisco Bay Area</p>
+        <h1 id="name">Leslie Raya</h1>
+        <p class="intro-title">Computer science student building tools for Linux systems.</p>
+        <p>I work across systems programming, applied machine learning, and full-stack development. My recent projects turn process and file-system activity into data people can inspect.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button" href="Leslie_Raya_Resume.pdf">View résumé</a>
         </div>
       </div>
-
-      <div class="hero-image-card">
-        <img
-          src="leslie-headshot.png"
-          alt="Leslie Raya professional headshot"
-          class="hero-photo"
-        />
-      </div>
+      <img class="portrait" src="leslie-headshot.png" alt="Leslie Raya" fetchpriority="high">
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">About Me</p>
-        <h2>Building technical skills through real projects.</h2>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title">Selected projects</h2>
+        <a href="https://github.com/leslieraya555?tab=repositories">All repositories <span aria-hidden="true">↗</span></a>
       </div>
-
-      <div class="card">
-        <p>
-          I am a motivated Computer Science student at San Francisco State University with hands-on
-          experience in software engineering, operating systems, front-end development, back-end
-          programming, data structures, and collaborative technical projects.
-        </p>
-
-        <p>
-          I enjoy building responsive, accessible, and functional applications that solve real-world
-          problems. My technical interests include systems programming, full-stack development,
-          data structures, AI, and user-centered software design.
-        </p>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2>Selected technical work.</h2>
-      </div>
-
       <div class="project-grid">
-        <!-- PROJECT 1 -->
-        <article class="project-card">
-          <p class="project-number">01</p>
-          <h3>CSC 415 Custom File System</h3>
-
-          <p>
-            A group operating systems project built in C that implements a custom file system with
-            directory navigation, path handling, shell integration, and file/directory management
-            commands such as mkdir, ls, pwd, and cd. This project demonstrates low-level
-            programming, system design, Linux development, memory management, and collaborative
-            software engineering.
-          </p>
-
-          <div class="tags">
-            <span>C</span>
-            <span>Linux</span>
-            <span>Operating Systems</span>
-            <span>File Systems</span>
-            <span>Shell</span>
-            <span>Makefile</span>
-            <span>GitHub</span>
-            <span>Team Project</span>
-          </div>
-
+        <article class="project featured">
+          <p class="eyebrow">Linux telemetry · Applied ML</p>
+          <h3><a href="https://github.com/leslieraya555/MemoryMedic">MemoryMedic AI 2.0 <span aria-hidden="true">↗</span></a></h3>
+          <p>A C++ monitor captures Linux process-memory telemetry. A Python classifier analyzes historical samples for patterns associated with memory leaks, and a React dashboard displays the results.</p>
+          <ul class="tags" aria-label="Technologies"><li>C++</li><li>Python</li><li>FastAPI</li><li>React</li></ul>
           <div class="project-links">
-            <a
-              href="https://github.com/CSC415-2026-Spring/csc415-filesystem-lraya7"
-              target="_blank"
-              class="project-link"
-            >
-              My Repo
-            </a>
-
-            <a
-              href="https://github.com/jiaweilyu0929/csc415-group-project"
-              target="_blank"
-              class="project-link"
-            >
-              Group Repo
-            </a>
+            <a href="https://github.com/leslieraya555/MemoryMedic" aria-label="MemoryMedic source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/leslieraya555/MemoryMedic/blob/main/docs/evaluation_report.md">Evaluation report <span aria-hidden="true">↗</span></a>
           </div>
         </article>
-
-        <!-- PROJECT 2 -->
-        <article class="project-card">
-          <p class="project-number">02</p>
-          <h3>Linux Device Driver</h3>
-
-          <p>
-            A Linux character device driver project built in C that creates a custom device
-            interface for encryption and decryption. This project strengthened my understanding of
-            kernel modules, device files, user-space testing, Makefiles, and low-level operating
-            system programming.
-          </p>
-
-          <div class="tags">
-            <span>C</span>
-            <span>Linux</span>
-            <span>Kernel Module</span>
-            <span>Device Driver</span>
-            <span>Makefile</span>
-            <span>Operating Systems</span>
-          </div>
-
+        <article class="project featured">
+          <p class="eyebrow">File-system monitoring · Applied ML</p>
+          <h3><a href="https://github.com/leslieraya555/FileSentinel-AI">FileSentinel AI <span aria-hidden="true">↗</span></a></h3>
+          <p>A Linux agent tracks file activity with inotify. A FastAPI backend and React dashboard surface unusual patterns using rules for bulk file operations and an Isolation Forest model.</p>
+          <ul class="tags" aria-label="Technologies"><li>C</li><li>inotify</li><li>FastAPI</li><li>React</li></ul>
           <div class="project-links">
-            <a
-              href="https://github.com/lraya7/assignment6-device-driver"
-              target="_blank"
-              class="project-link"
-            >
-              GitHub Repo
-            </a>
+            <a href="https://github.com/leslieraya555/FileSentinel-AI" aria-label="FileSentinel AI source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/leslieraya555/FileSentinel-AI#screenshots">Dashboard screenshots <span aria-hidden="true">↗</span></a>
           </div>
         </article>
-
-        <!-- PROJECT 3 -->
-        <article class="project-card">
-          <p class="project-number">03</p>
-          <h3>Police Data Threads</h3>
-
-          <p>
-            A multithreaded C programming project that processes police data using threading
-            concepts, synchronization, file handling, and structured data processing. This project
-            demonstrates operating systems knowledge, parallel programming, debugging, and working
-            with real-world datasets.
-          </p>
-
-          <div class="tags">
-            <span>C</span>
-            <span>Threads</span>
-            <span>Operating Systems</span>
-            <span>File Processing</span>
-            <span>Data Analysis</span>
-            <span>Debugging</span>
-          </div>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/CSC415-2026-Spring/csc415-assignment-4-policedatathreads-lraya7"
-              target="_blank"
-              class="project-link"
-            >
-              GitHub Repo
-            </a>
-          </div>
+        <article class="project">
+          <p class="eyebrow">Operating systems · Team coursework</p>
+          <h3><a href="https://github.com/leslieraya555/csc415-group-project">Custom File System <span aria-hidden="true">↗</span></a></h3>
+          <p>A C implementation of a file system over a simulated block volume, with free-space tracking, directory navigation, and shell commands.</p>
+          <ul class="tags" aria-label="Technologies"><li>C</li><li>Linux</li><li>Make</li></ul>
         </article>
-
-        <!-- PROJECT 4 -->
-        <article class="project-card">
-          <p class="project-number">04</p>
-          <h3>Data Structures & Cache Manager Projects</h3>
-
-          <p>
-            A series of C++ data structure projects focused on implementing and applying linked
-            lists, hash tables, binary search trees, and cache management. The strongest milestone
-            combines cache management with BST logic, showing algorithmic thinking, memory
-            management, and structured software design.
-          </p>
-
-          <div class="tags">
-            <span>C++</span>
-            <span>Data Structures</span>
-            <span>Hash Tables</span>
-            <span>Binary Search Trees</span>
-            <span>Cache Manager</span>
-            <span>Algorithms</span>
-          </div>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/joe-hui-sfsu/milestone-5-cachemanager-bst-lraya7"
-              target="_blank"
-              class="project-link"
-            >
-              Best Milestone
-            </a>
-
-            <a
-              href="https://github.com/joe-hui-sfsu/milestone-3-cachemanager-lraya7"
-              target="_blank"
-              class="project-link"
-            >
-              Cache Manager
-            </a>
-
-            <a
-              href="https://github.com/joe-hui-sfsu/milestone-4-binary-search-tree-lraya7"
-              target="_blank"
-              class="project-link"
-            >
-              BST
-            </a>
-
-            <a
-              href="https://github.com/joe-hui-sfsu/milestone-2-hashtable-lraya7"
-              target="_blank"
-              class="project-link"
-            >
-              Hash Table
-            </a>
-
-            <a
-              href="https://github.com/joe-hui-sfsu/milestone-1-doubly-linked-list-lraya7"
-              target="_blank"
-              class="project-link"
-            >
-              Linked List
-            </a>
-          </div>
-        </article>
-
-        <!-- PROJECT 5 -->
-        <article class="project-card">
-          <p class="project-number">05</p>
-          <h3>BoomBots</h3>
-
-          <p>
-            A 2D tank battle game built with Java using object-oriented programming, JavaFX/Swing,
-            collision detection, health tracking, power-ups, and game mechanics. This project
-            strengthened my experience with software design, debugging, teamwork, and game
-            development.
-          </p>
-
-          <div class="tags">
-            <span>Java</span>
-            <span>JavaFX</span>
-            <span>Swing</span>
-            <span>OOP</span>
-            <span>UML</span>
-            <span>Game Development</span>
-            <span>Software Engineering</span>
-          </div>
-        </article>
-
-        <!-- PROJECT 6 -->
-        <article class="project-card">
-          <p class="project-number">06</p>
-          <h3>Full-Stack Portfolio Website</h3>
-
-          <p>
-            A responsive personal portfolio website designed to showcase my projects, technical
-            skills, education, and professional development. The website includes modern UI design,
-            front-end structure, responsive layouts, Formspree contact form integration, and GitHub
-            deployment.
-          </p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Formspree</span>
-            <span>GitHub Pages</span>
-            <span>Responsive Design</span>
-            <span>UI Design</span>
-          </div>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/leslieraya555/leslie-raya-portfolio"
-              target="_blank"
-              class="project-link"
-            >
-              GitHub Repo
-            </a>
-          </div>
+        <article class="project">
+          <p class="eyebrow">Operating systems · Coursework</p>
+          <h3><a href="https://github.com/leslieraya555/assignment6-device-driver">Linux Device Driver <span aria-hidden="true">↗</span></a></h3>
+          <p>A Linux character device driver with a user-space test program for its read, write, and ioctl interface.</p>
+          <ul class="tags" aria-label="Technologies"><li>C</li><li>Linux kernel</li><li>ioctl</li></ul>
         </article>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Skills</p>
-        <h2>Technical strengths.</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="card">
-          <h3>Programming Languages</h3>
-          <p>Java, Python, C, C++, JavaScript, Ruby, SQL</p>
-        </div>
-
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>HTML, CSS, JavaScript, Responsive Design, UI Design, Front-End Development</p>
-        </div>
-
-        <div class="card">
-          <h3>Back-End & Databases</h3>
-          <p>Back-End Development, SQL, MySQL, Database Management, Server-Side Logic</p>
-        </div>
-
-        <div class="card">
-          <h3>Software Engineering</h3>
-          <p>
-            Object-Oriented Programming, Data Structures, Algorithms, Debugging, Testing,
-            Version Control, Agile Collaboration, UML Design
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Systems & Low-Level Programming</h3>
-          <p>Linux, C, Operating Systems, File Systems, Threads, Makefiles, Device Drivers</p>
-        </div>
-
-        <div class="card">
-          <h3>Tools & Technologies</h3>
-          <p>Git, GitHub, Linux, Makefile, Microsoft Office, Google Workspace, VS Code, IntelliJ IDEA</p>
-        </div>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div>
+        <p>I’m completing a B.S. in Computer Science at San Francisco State University, with an expected graduation in May 2027. I’m interested in how software behaves under the hood and how to make that behavior easier to understand through monitoring and interfaces.</p>
+        <p><strong>Technical toolkit</strong><br>C, C++, Python, Java, JavaScript, SQL, Linux, Git, FastAPI, and React.</p>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Education</p>
-        <h2>Academic background.</h2>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="actions">
+        <a class="button primary" href="mailto:leslieraya08@gmail.com">Email me</a>
+        <a class="button" href="https://www.linkedin.com/in/leslie-raya">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://github.com/leslieraya555">GitHub <span aria-hidden="true">↗</span></a>
       </div>
-
-      <div class="card">
-        <h3>San Francisco State University</h3>
-        <p><strong>Bachelor of Science in Computer Science</strong></p>
-        <p>Expected Graduation: August 2026</p>
-
-        <p>
-          Relevant Coursework: Operating Systems, Data Structures, Analysis of Algorithms,
-          Discrete Mathematics, Programming Methodology, Web Software Development
-        </p>
-      </div>
-    </section>
-
-    <!-- PROFESSIONAL DEVELOPMENT -->
-    <section id="development" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Professional Development</p>
-        <h2>Continuing to grow as a software engineer.</h2>
-      </div>
-
-      <div class="card">
-        <p>
-          I actively continue developing my technical and professional skills through coursework,
-          workshops, certifications, and hands-on projects. My professional development focuses on
-          software engineering, full-stack development, AI, cloud technologies, and career readiness
-          in the technology field.
-        </p>
-      </div>
-
-      <div class="development-grid">
-        <span>AWS Cloud Learning</span>
-        <span>IBM AI / Coursera Coursework</span>
-        <span>SFSU ML/AI Workshop</span>
-        <span>Software Engineering Internship Experience</span>
-        <span>GitHub Project Collaboration</span>
-        <span>Technical Interview Preparation</span>
-        <span>Full-Stack Development Practice</span>
-      </div>
-    </section>
-
-    <!-- BEYOND CODING -->
-    <section id="beyond" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Beyond Coding</p>
-        <h2>More than technical skills.</h2>
-      </div>
-
-      <div class="card">
-        <p>
-          Beyond coding, I value teamwork, communication, creativity, and continuous learning. I
-          enjoy working on meaningful technology projects that support users, improve accessibility,
-          and solve real-world problems. My interests include AI for wellness, software engineering,
-          cloud technology, and building tools that make people’s lives easier.
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s connect.</h2>
-      </div>
-
-      <div class="contact-grid">
-        <div class="card contact-info">
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:leslieraya08@gmail.com">leslieraya08@gmail.com</a>
-          </p>
-
-          <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/leslie-raya" target="_blank">
-              linkedin.com/in/leslie-raya
-            </a>
-          </p>
-
-          <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/leslieraya555" target="_blank">
-              github.com/leslieraya555
-            </a>
-          </p>
-        </div>
-
-        <form
-          class="card contact-form"
-          action="https://formspree.io/f/mkoaongb"
-          method="POST"
-        >
-          <label for="name">Name</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Your name"
-            required
-          />
-
-          <label for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Your email"
-            required
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Write your message here"
-            required
-          ></textarea>
-
-          <input
-            type="hidden"
-            name="_subject"
-            value="New message from Leslie Raya Portfolio Website"
-          />
-
-          <button type="submit" class="btn primary">Send Message</button>
+      <details class="contact-details">
+        <summary>Send a message through the site</summary>
+        <form action="https://formspree.io/f/mkoaongb" method="post">
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" autocomplete="name" required>
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+          <input name="_subject" type="hidden" value="New message from Leslie Raya Portfolio Website">
+          <button class="button primary" type="submit">Send message</button>
         </form>
-      </div>
+      </details>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 Leslie Raya. Built with HTML, CSS, and JavaScript.</p>
+  <footer class="wrap footer">
+    <span>© 2026 Leslie Raya</span>
+    <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
