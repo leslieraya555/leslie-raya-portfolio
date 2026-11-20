@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Leslie Raya’s software engineering portfolio, featuring Linux systems, applied machine learning, and full-stack projects.">
+  <meta
+    name="description"
+    content="Leslie Raya’s software engineering portfolio. Explore projects in Linux systems programming, memory analysis, file-system monitoring, and applied machine learning."
+  >
   <meta name="theme-color" content="#f8f8f2">
   <title>Leslie Raya · Software Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
     <nav class="wrap nav" aria-label="Main navigation">
       <a class="brand" href="#home">Leslie Raya</a>
+      
+
       <div class="nav-links">
         <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+        <a href="#about">About &amp; Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -26,82 +33,261 @@
       <div>
         <p class="eyebrow">San Francisco Bay Area</p>
         <h1 id="name">Leslie Raya</h1>
-        <p class="intro-title">Computer science student building tools for Linux systems.</p>
-        <p>I work across systems programming, applied machine learning, and full-stack development. My recent projects turn process and file-system activity into data people can inspect.</p>
+
+        <p class="intro-title">
+          Computer science student building tools for Linux systems.
+        </p>
+
+        <p>
+          I study computer science at San Francisco State University.
+          I build tools that help developers investigate memory growth
+          and unusual file activity.
+        </p>
+
         <div class="actions">
-          <a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
-          <a class="button" href="Leslie_Raya_Resume.pdf">View résumé</a>
+          <a class="button primary" href="#projects">
+            Explore projects <span aria-hidden="true">↓</span>
+          </a>
+         <a class="button" href="./Leslie%20I%20Raya%20Resume-2.pdf">View résumé</a>
+            View résumé
+          </a>
         </div>
       </div>
-      <img class="portrait" src="leslie-headshot.png" alt="Leslie Raya" fetchpriority="high">
+
+      <img
+        class="portrait"
+        src="leslie-headshot.png"
+        alt="Leslie Raya"
+        fetchpriority="high"
+      >
     </section>
 
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="section-head">
         <h2 id="projects-title">Selected projects</h2>
-        <a href="https://github.com/leslieraya555?tab=repositories">All repositories <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/leslieraya555?tab=repositories">
+          All repositories <span aria-hidden="true">↗</span>
+        </a>
       </div>
+
       <div class="project-grid">
         <article class="project featured">
-          <p class="eyebrow">Linux telemetry · Applied ML</p>
-          <h3><a href="https://github.com/leslieraya555/MemoryMedic">MemoryMedic AI 2.0 <span aria-hidden="true">↗</span></a></h3>
-          <p>A C++ monitor captures Linux process-memory telemetry. A Python classifier analyzes historical samples for patterns associated with memory leaks, and a React dashboard displays the results.</p>
-          <ul class="tags" aria-label="Technologies"><li>C++</li><li>Python</li><li>FastAPI</li><li>React</li></ul>
+          <p class="eyebrow">Linux systems · Machine learning</p>
+          <h3>MemoryMedic</h3>
+
+          <p>
+            I built a C++17 monitor that reads memory usage, thread counts,
+            and page faults from Linux processes. With MemoryMedic AI 2.0,
+            I added a dashboard where developers can select a recorded run,
+            inspect its memory trend, and request a leak prediction.
+          </p>
+
+          <p>
+            I tested the classifier on four synthetic workloads: steady
+            memory use, a linear leak, temporary spikes, and cache growth.
+            It correctly classified all 156 measurements from four runs
+            held out for testing.
+          </p>
+
+          <ul class="tags" aria-label="MemoryMedic technologies">
+            <li>C++17</li>
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>FastAPI</li>
+            <li>React</li>
+          </ul>
+
           <div class="project-links">
-            <a href="https://github.com/leslieraya555/MemoryMedic" aria-label="MemoryMedic source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/leslieraya555/MemoryMedic/blob/main/docs/evaluation_report.md">Evaluation report <span aria-hidden="true">↗</span></a>
+            <a
+              href="https://github.com/leslieraya555/MemoryMedic"
+              aria-label="View MemoryMedic on GitHub"
+            >
+              View on GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://github.com/leslieraya555/MemoryMedic/blob/main/docs/evaluation_report.md">
+              Read the evaluation <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </article>
+
         <article class="project featured">
-          <p class="eyebrow">File-system monitoring · Applied ML</p>
-          <h3><a href="https://github.com/leslieraya555/FileSentinel-AI">FileSentinel AI <span aria-hidden="true">↗</span></a></h3>
-          <p>A Linux agent tracks file activity with inotify. A FastAPI backend and React dashboard surface unusual patterns using rules for bulk file operations and an Isolation Forest model.</p>
-          <ul class="tags" aria-label="Technologies"><li>C</li><li>inotify</li><li>FastAPI</li><li>React</li></ul>
+          <p class="eyebrow">File-system monitoring · Security</p>
+          <h3>FileSentinel AI</h3>
+
+          <p>
+            I built a Linux agent that tracks file changes, deletions, and
+            renames using inotify. A FastAPI backend analyzes the events
+            using detection rules and an Isolation Forest model. Users can
+            inspect flagged activity in a React dashboard.
+          </p>
+
+          <ul class="tags" aria-label="FileSentinel AI technologies">
+            <li>C</li>
+            <li>Python</li>
+            <li>inotify</li>
+            <li>FastAPI</li>
+            <li>React</li>
+          </ul>
+
           <div class="project-links">
-            <a href="https://github.com/leslieraya555/FileSentinel-AI" aria-label="FileSentinel AI source code on GitHub">Source code <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/leslieraya555/FileSentinel-AI#screenshots">Dashboard screenshots <span aria-hidden="true">↗</span></a>
+            <a
+              href="https://github.com/leslieraya555/FileSentinel-AI"
+              aria-label="View FileSentinel AI on GitHub"
+            >
+              View on GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://github.com/leslieraya555/FileSentinel-AI#screenshots">
+              See the dashboard <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </article>
+
         <article class="project">
           <p class="eyebrow">Operating systems · Team coursework</p>
-          <h3><a href="https://github.com/leslieraya555/csc415-group-project">Custom File System <span aria-hidden="true">↗</span></a></h3>
-          <p>A C implementation of a file system over a simulated block volume, with free-space tracking, directory navigation, and shell commands.</p>
-          <ul class="tags" aria-label="Technologies"><li>C</li><li>Linux</li><li>Make</li></ul>
+          <h3>
+            <a href="https://github.com/leslieraya555/csc415-group-project">
+              Custom File System <span aria-hidden="true">↗</span>
+            </a>
+          </h3>
+
+          <p>
+            My team implemented a persistent file system in C on a simulated
+            disk. The project supports free-space tracking, buffered reads
+            and writes, and shell commands for navigating directories.
+          </p>
+
+          <ul class="tags" aria-label="Custom File System technologies">
+            <li>C</li>
+            <li>Linux</li>
+            <li>Make</li>
+          </ul>
         </article>
+
         <article class="project">
-          <p class="eyebrow">Operating systems · Coursework</p>
-          <h3><a href="https://github.com/leslieraya555/assignment6-device-driver">Linux Device Driver <span aria-hidden="true">↗</span></a></h3>
-          <p>A Linux character device driver with a user-space test program for its read, write, and ioctl interface.</p>
-          <ul class="tags" aria-label="Technologies"><li>C</li><li>Linux kernel</li><li>ioctl</li></ul>
+          <p class="eyebrow">Kernel programming · Coursework</p>
+          <h3>
+            <a href="https://github.com/leslieraya555/assignment6-device-driver">
+              Linux Device Driver <span aria-hidden="true">↗</span>
+            </a>
+          </h3>
+
+          <p>
+            I built a loadable Linux character device driver in C and tested
+            its read, write, and ioctl operations from a user-space program.
+          </p>
+
+          <ul class="tags" aria-label="Linux Device Driver technologies">
+            <li>C</li>
+            <li>Linux kernel</li>
+            <li>Make</li>
+          </ul>
         </article>
       </div>
     </section>
 
     <section class="section about" id="about" aria-labelledby="about-title">
-      <h2 id="about-title">About</h2>
+      <h2 id="about-title">About &amp; skills</h2>
+
       <div>
-        <p>I’m completing a B.S. in Computer Science at San Francisco State University, with an expected graduation in May 2027. I’m interested in how software behaves under the hood and how to make that behavior easier to understand through monitoring and interfaces.</p>
-        <p><strong>Technical toolkit</strong><br>C, C++, Python, Java, JavaScript, SQL, Linux, Git, FastAPI, and React.</p>
+        <p>
+          I’m completing a B.S. in Computer Science at San Francisco State
+          University and expect to graduate in May 2027. I’m interested in
+          how developers use measurements from a running system to figure
+          out why memory keeps growing or what caused a burst of file activity.
+        </p>
+
+        <h3>Programming languages &amp; technical skills</h3>
+
+        <p>
+          <strong>Programming &amp; scripting:</strong>
+          Python, C, C++17, Java, JavaScript (JSX), Bash
+        </p>
+
+        <p>
+          <strong>Databases:</strong>
+          SQL, MySQL
+        </p>
+
+        <p>
+          <strong>Web &amp; APIs:</strong>
+          HTML, CSS, React, Vite, FastAPI, REST APIs
+        </p>
+
+        <p>
+          <strong>Machine learning &amp; data:</strong>
+          scikit-learn, pandas, NumPy, feature engineering,
+          anomaly detection, model evaluation
+        </p>
+
+        <p>
+          <strong>Linux systems:</strong>
+          Ubuntu, process monitoring with /proc, file-system monitoring
+          with inotify, kernel modules, device drivers
+        </p>
+
+        <p>
+          <strong>Build, testing &amp; automation:</strong>
+          Git, GitHub Actions, Docker, Docker Compose, CMake, Make,
+          CTest, pytest, Vitest
+        </p>
+
+        <p>
+          <strong>Development tools:</strong>
+          Visual Studio Code, IntelliJ IDEA, Jupyter Notebook
+        </p>
+
+        <p>
+          <strong>Productivity &amp; collaboration:</strong>
+          Microsoft 365 (Word, Excel, PowerPoint, Outlook),
+          Google Workspace (Docs, Sheets, Slides, Gmail)
+        </p>
       </div>
     </section>
 
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
+
       <div class="actions">
-        <a class="button primary" href="mailto:leslieraya08@gmail.com">Email me</a>
-        <a class="button" href="https://www.linkedin.com/in/leslie-raya">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a class="button" href="https://github.com/leslieraya555">GitHub <span aria-hidden="true">↗</span></a>
+        <a class="button primary" href="mailto:leslieraya08@gmail.com">
+          Email me
+        </a>
+        <a class="button" href="https://www.linkedin.com/in/leslie-raya">
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+        <a class="button" href="https://github.com/leslieraya555">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
       </div>
+
       <details class="contact-details">
         <summary>Send a message through the site</summary>
+
         <form action="https://formspree.io/f/mkoaongb" method="post">
           <label for="contact-name">Name</label>
           <input id="contact-name" name="name" autocomplete="name" required>
+
           <label for="contact-email">Email</label>
-          <input id="contact-email" name="email" type="email" autocomplete="email" required>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          >
+
           <label for="contact-message">Message</label>
-          <textarea id="contact-message" name="message" rows="5" required></textarea>
-          <input name="_subject" type="hidden" value="New message from Leslie Raya Portfolio Website">
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from Leslie Raya Portfolio Website"
+          >
           <button class="button primary" type="submit">Send message</button>
         </form>
       </details>
