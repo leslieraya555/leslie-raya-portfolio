@@ -1,95 +1,99 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <!-- ============================================
-       LESLIE RAYA
-       SOFTWARE ENGINEERING PORTFOLIO
-       File: index.html
-  ============================================ -->
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Leslie Raya's Software Engineering Portfolio featuring artificial intelligence, machine learning, Linux systems, full-stack development, and computer science projects."
+    content="Leslie Raya's software engineering portfolio. Explore Linux systems, AI/ML, memory monitoring, file-system tools, and full-stack projects."
   >
 
   <meta name="author" content="Leslie Raya">
-
   <meta name="theme-color" content="#0b1120">
 
   <title>
     Leslie Raya | Software Engineering Portfolio
   </title>
 
-  <!-- WEBSITE FAVICON -->
+  <!-- WEBSITE ICON -->
   <link
     rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='27' font-family='Arial' font-weight='bold' fill='%2377e6d1'%3ELR%3C/text%3E%3C/svg%3E"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='bold' font-size='26' fill='%2377e6d1'%3ELR%3C/text%3E%3C/svg%3E"
   >
 
-  <!-- MAIN STYLESHEET -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
   <!-- JAVASCRIPT -->
   <script src="script.js" defer></script>
-
 </head>
-
 
 <body>
 
-  <!-- ============================================
-       ACCESSIBILITY
-  ============================================ -->
-
-  <a href="#main" class="skip-link">
-    Skip to content
+  <a class="skip-link" href="#main">
+    Skip to main content
   </a>
 
-
-  <!-- ============================================
-       HEADER AND NAVIGATION
-  ============================================ -->
+  <!-- =====================================
+       NAVIGATION
+  ====================================== -->
 
   <header class="site-header">
 
     <div class="container nav-bar">
 
-      <!-- WEBSITE LOGO -->
       <a
-        href="#home"
         class="brand"
-        aria-label="Leslie Raya Home"
+        href="#home"
+        aria-label="Leslie Raya, home"
       >
         Leslie<span>.</span>Raya
       </a>
 
+      <nav
+        class="site-nav"
+        id="siteNav"
+        aria-label="Main navigation"
+      >
 
-      <!-- THEME BUTTON AND MOBILE MENU -->
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+
+        <a href="#contact" class="nav-contact">
+          Contact
+        </a>
+
+        <!-- DIRECT GITHUB PROFILE LINK -->
+        <a
+          href="https://github.com/leslieraya555"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Leslie Raya on GitHub (opens in a new tab)"
+        >
+          GitHub ↗
+        </a>
+
+      </nav>
+
       <div class="nav-actions">
 
-        <!-- DARK AND LIGHT MODE -->
+        <!-- DARK / LIGHT MODE -->
         <button
           id="themeToggle"
           class="theme-toggle"
           type="button"
           aria-label="Switch to light mode"
-          title="Toggle light and dark mode"
+          title="Toggle dark and light mode"
         >
           ☀
         </button>
 
-
-        <!-- MOBILE NAVIGATION -->
+        <!-- MOBILE MENU -->
         <button
           id="menuToggle"
           class="menu-toggle"
@@ -105,126 +109,69 @@
 
       </div>
 
-
-      <!-- NAVIGATION LINKS -->
-      <nav
-        id="siteNav"
-        class="site-nav"
-        aria-label="Main navigation"
-      >
-
-        <a href="#home">
-          Home
-        </a>
-
-        <a href="#projects">
-          Projects
-        </a>
-
-        <a href="#skills">
-          Skills
-        </a>
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#education">
-          Education
-        </a>
-
-        <a href="#contact" class="nav-contact">
-          Contact
-        </a>
-
-      </nav>
-
     </div>
 
   </header>
 
-
-  <!-- ============================================
-       MAIN WEBSITE CONTENT
-  ============================================ -->
-
   <main id="main">
 
-
-    <!-- ==========================================
-         SECTION 1 — HOME / HERO
-    ========================================== -->
+    <!-- =====================================
+         HOME / HERO SECTION
+    ====================================== -->
 
     <section class="hero" id="home">
 
       <div class="container hero-grid">
 
-
-        <!-- LEFT SIDE: INTRODUCTION -->
+        <!-- INTRODUCTION -->
         <div class="hero-content">
 
           <p class="eyebrow">
-
-            <span class="status-dot"></span>
+            <span
+              class="status-dot"
+              aria-hidden="true"
+            ></span>
 
             Bay Area · Open to Software Engineering Opportunities
-
           </p>
 
-
-          <!-- MAIN HEADING -->
           <h1>
-
             Hi, I'm Leslie.
-
             <br>
 
             <span class="gradient-text">
               I build software that solves real problems.
             </span>
-
           </h1>
 
-
-          <!-- INTRODUCTION -->
           <p class="hero-description">
-
             I'm a Computer Science student at
-            San Francisco State University with
-            interests in software engineering,
-            artificial intelligence, machine learning,
-            Linux systems, data science, and
-            full-stack development.
-
+            San Francisco State University interested
+            in software engineering, AI/ML,
+            Linux systems, data science,
+            and full-stack development.
           </p>
-
 
           <p class="hero-description">
-
-            I enjoy building practical applications,
-            developing intelligent systems, and
-            connecting complex backend technologies
-            with intuitive user interfaces.
-
+            I enjoy creating practical tools that
+            connect systems programming, backend
+            development, and accessible interfaces.
           </p>
 
-
-          <!-- ACTION BUTTONS -->
+          <!-- BUTTONS -->
           <div class="button-row">
 
-            <!-- EXPLORE PROJECTS -->
             <a
-              href="#projects"
               class="button button-primary"
+              href="#projects"
             >
               Explore My Projects ↗
             </a>
 
-
-            <!-- VIEW RESUME -->
+            <!-- SINGLE RESUME BUTTON -->
             <a
-              href="./Leslie%20I%20Raya%20Resume-2.pdf"
               class="button button-secondary"
+              href="./Leslie%20I%20Raya%20Resume-2.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -232,7 +179,6 @@
             </a>
 
           </div>
-
 
           <!-- SOCIAL LINKS -->
           <div class="social-links">
@@ -245,7 +191,6 @@
               GitHub ↗
             </a>
 
-
             <a
               href="https://www.linkedin.com/in/leslie-raya/"
               target="_blank"
@@ -254,90 +199,57 @@
               LinkedIn ↗
             </a>
 
+            <!-- PORTFOLIO SOURCE CODE -->
+            <a
+              href="https://github.com/leslieraya555/leslie-raya-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website Source Code ↗
+            </a>
+
           </div>
 
         </div>
 
-
-
-        <!-- ======================================
-             RIGHT SIDE
-             HEADSHOT + DEVELOPER TERMINAL
+        <!-- =====================================
+             HEADSHOT AND TERMINAL
         ====================================== -->
 
         <div class="hero-visual">
 
-
-          <!-- PROFESSIONAL PROFILE CARD -->
+          <!-- PROFESSIONAL PHOTO -->
           <div class="profile-card">
 
+            <div class="profile-avatar">
 
-            <!-- CIRCULAR HEADSHOT -->
-            <div
-              class="profile-avatar"
-              style="
-                position: relative;
-                display: block;
-                width: 220px;
-                height: 220px;
-                min-width: 220px;
-                min-height: 220px;
-                margin: 0 auto;
-                overflow: hidden;
-                border-radius: 50%;
-              "
-            >
-
-              <!-- YOUR PROFESSIONAL PHOTO -->
               <img
+                class="profile-photo"
                 src="./leslie-headshot.png"
                 alt="Portrait of Leslie Raya"
-                class="profile-photo"
-                width="220"
-                height="220"
-                style="
-                  position: absolute;
-                  inset: 0;
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                  max-width: none;
-                  object-fit: cover;
-                  object-position: center 25%;
-                  border-radius: 50%;
-                "
+                width="240"
+                height="240"
               >
 
             </div>
 
-
-            <!-- PROFILE NAME -->
             <h2 class="profile-name">
               Leslie Raya
             </h2>
 
-
-            <!-- PROFESSIONAL TITLE -->
             <p class="profile-role">
-              Computer Science | Software Engineering
+              Computer Science · Software Engineering
             </p>
 
           </div>
 
-
-
-          <!-- ======================================
-               DEVELOPER TERMINAL
-          ====================================== -->
-
+          <!-- DEVELOPER TERMINAL -->
           <div
             class="terminal-card"
-            aria-label="Developer profile information"
+            aria-label="Developer profile"
           >
 
-            <!-- TERMINAL HEADER -->
             <div class="terminal-bar">
-
               <span></span>
               <span></span>
               <span></span>
@@ -345,11 +257,8 @@
               <small>
                 leslie@portfolio ~
               </small>
-
             </div>
 
-
-            <!-- TERMINAL CONTENT -->
             <div class="terminal-body">
 
               <p>
@@ -361,7 +270,6 @@
                 Leslie Raya
               </p>
 
-
               <p>
                 <span class="terminal-prompt">$</span>
                 cat interests.txt
@@ -370,7 +278,6 @@
               <p class="terminal-output">
                 AI / ML · Linux · Full-stack
               </p>
-
 
               <p>
                 <span class="terminal-prompt">$</span>
@@ -381,11 +288,9 @@
                 B.S. Computer Science
               </p>
 
-
               <p class="terminal-comment">
                 # SFSU · Expected May 2027
               </p>
-
 
               <p>
                 <span class="terminal-prompt">$</span>
@@ -402,18 +307,14 @@
 
     </section>
 
-
-
-    <!-- ==========================================
-         SECTION 2 — FEATURED PROJECTS
-    ========================================== -->
+    <!-- =====================================
+         FEATURED PROJECTS
+    ====================================== -->
 
     <section class="section" id="projects">
 
       <div class="container">
 
-
-        <!-- SECTION HEADING -->
         <div class="section-heading">
 
           <p class="eyebrow">
@@ -425,24 +326,19 @@
           </h2>
 
           <p>
-            Engineering projects demonstrating
-            my experience with systems programming,
-            artificial intelligence, machine learning,
-            backend development, automated testing,
-            and full-stack applications.
+            Linux monitoring, intelligent tooling,
+            operating systems, and full-stack
+            dashboards. Explore the code, screenshots,
+            and evaluation evidence.
           </p>
 
         </div>
 
-
-
-        <!-- PROJECT GRID -->
         <div class="project-grid">
 
-
-          <!-- ===================================
-               PROJECT 1 — MEMORYMEDIC AI
-          =================================== -->
+          <!-- ============================
+               MEMORYMEDIC AI 2.0
+          ============================= -->
 
           <article class="project-card">
 
@@ -458,46 +354,63 @@
 
             </div>
 
+            <!-- PROJECT SCREENSHOT -->
+            <div class="project-media">
+
+              <img
+                src="https://raw.githubusercontent.com/leslieraya555/MemoryMedic/main/docs/images/memorymedic-linear-leak-prediction.png"
+                alt="MemoryMedic dashboard showing a linear memory-leak workload prediction"
+                width="960"
+                height="540"
+                loading="lazy"
+              >
+
+            </div>
 
             <h3>
               MemoryMedic AI 2.0
             </h3>
 
-
             <p>
               A Linux process-memory monitoring and
-              machine-learning anomaly detection platform.
+              anomaly-detection prototype.
 
-              Built with C++17 and Python, the platform
-              collects memory telemetry, engineers features,
-              trains and evaluates machine-learning models,
-              and exposes predictions through a FastAPI
-              backend and React dashboard.
-
-              Includes controlled synthetic workload
-              benchmarking, evaluation documentation,
-              automated backend testing, and
-              Playwright end-to-end browser testing.
+              C++ collects memory telemetry,
+              Python processes features and trains models,
+              FastAPI exposes predictions, and a React
+              dashboard visualizes results.
             </p>
 
+            <!-- EVALUATION -->
+            <div class="project-evidence">
 
-            <!-- TECHNOLOGIES -->
-            <div class="tags">
+              <strong>
+                Documented Benchmark
+              </strong>
 
-              <span>C++17</span>
-              <span>Python</span>
-              <span>Linux</span>
-              <span>Machine Learning</span>
-              <span>scikit-learn</span>
-              <span>FastAPI</span>
-              <span>React</span>
-              <span>Docker</span>
-              <span>Playwright</span>
+              <p>
+                1,243 telemetry observations from
+                32 controlled monitoring runs across
+                four synthetic workload types.
+
+                These preliminary results do not
+                establish production performance.
+              </p>
 
             </div>
 
+            <!-- TECHNOLOGIES -->
+            <div class="tags">
+              <span>C++17</span>
+              <span>Python</span>
+              <span>Linux</span>
+              <span>scikit-learn</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>Playwright</span>
+            </div>
 
-            <!-- PROJECT LINKS -->
+            <!-- LINKS -->
             <div class="project-links">
 
               <a
@@ -505,9 +418,16 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Repository ↗
+                Repository ↗
               </a>
 
+              <a
+                href="https://github.com/leslieraya555/MemoryMedic/blob/main/docs/architecture.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Architecture ↗
+              </a>
 
               <a
                 href="https://github.com/leslieraya555/MemoryMedic/blob/main/docs/evaluation_report.md"
@@ -521,11 +441,9 @@
 
           </article>
 
-
-
-          <!-- ===================================
-               PROJECT 2 — FILESENTINEL AI
-          =================================== -->
+          <!-- ============================
+               FILESENTINEL AI
+          ============================= -->
 
           <article class="project-card">
 
@@ -541,40 +459,53 @@
 
             </div>
 
+            <!-- PROJECT SCREENSHOT -->
+            <div class="project-media">
+
+              <img
+                src="https://raw.githubusercontent.com/leslieraya555/FileSentinel-AI/main/docs/images-filesentinel/dashboard/filesentinel-dashboard-01.png"
+                alt="FileSentinel AI file-system monitoring dashboard"
+                width="960"
+                height="540"
+                loading="lazy"
+              >
+
+            </div>
 
             <h3>
               FileSentinel AI
             </h3>
 
-
             <p>
-              A Linux file-system monitoring and
-              anomaly-detection application.
-
-              Uses the Linux inotify interface
-              to observe file-system events,
-              Python for anomaly detection,
-              FastAPI for backend services,
-              and React for an interactive
-              monitoring dashboard.
-
-              Explores intelligent file-system
-              monitoring and event analysis.
+              A Linux file-event monitoring platform
+              that uses inotify for event collection,
+              Python and FastAPI for backend functionality,
+              anomaly-detection experiments, and a React
+              dashboard to inspect activity.
             </p>
 
+            <div class="project-evidence">
 
-            <div class="tags">
+              <strong>
+                What It Demonstrates
+              </strong>
 
-              <span>C</span>
-              <span>Python</span>
-              <span>Linux</span>
-              <span>inotify</span>
-              <span>FastAPI</span>
-              <span>React</span>
-              <span>Machine Learning</span>
+              <p>
+                Event collection, API integration,
+                frontend visualization, and a
+                practical Linux-monitoring workflow.
+              </p>
 
             </div>
 
+            <div class="tags">
+              <span>C</span>
+              <span>Linux</span>
+              <span>inotify</span>
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>React</span>
+            </div>
 
             <div class="project-links">
 
@@ -583,18 +514,24 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Repository ↗
+                Repository ↗
+              </a>
+
+              <a
+                href="https://github.com/leslieraya555/FileSentinel-AI/tree/main/docs/images-filesentinel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Screenshots ↗
               </a>
 
             </div>
 
           </article>
 
-
-
-          <!-- ===================================
-               PROJECT 3 — CUSTOM FILE SYSTEM
-          =================================== -->
+          <!-- ============================
+               CUSTOM FILE SYSTEM
+          ============================= -->
 
           <article class="project-card">
 
@@ -610,55 +547,51 @@
 
             </div>
 
+            <div
+              class="project-media project-media-code"
+              aria-hidden="true"
+            >
+              <span>fs_init();</span>
+              <span>allocate_blocks();</span>
+              <span>write_file();</span>
+            </div>
 
             <h3>
               Custom File System
             </h3>
 
-
             <p>
-              A collaborative operating-systems
-              project implemented in C.
-
-              Explores low-level file-system
-              development, directory operations,
-              simulated storage volumes,
+              A collaborative operating-systems project
+              in C covering a file system on a simulated
+              storage volume, directory handling,
               free-space management,
-              buffered file input/output,
-              and systems programming concepts.
+              and buffered file I/O.
             </p>
 
-
             <div class="tags">
-
               <span>C</span>
               <span>Linux</span>
-              <span>Operating Systems</span>
               <span>File Systems</span>
               <span>Make</span>
-
             </div>
-
 
             <div class="project-links">
 
               <a
-                href="https://github.com/leslieraya555?tab=repositories"
+                href="https://github.com/leslieraya555/csc415-group-project"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Browse Repositories ↗
+                Team Repository ↗
               </a>
 
             </div>
 
           </article>
 
-
-
-          <!-- ===================================
-               PROJECT 4 — LINUX DEVICE DRIVER
-          =================================== -->
+          <!-- ============================
+               LINUX DEVICE DRIVER
+          ============================= -->
 
           <article class="project-card">
 
@@ -674,45 +607,42 @@
 
             </div>
 
+            <div
+              class="project-media project-media-code"
+              aria-hidden="true"
+            >
+              <span>module_init(...);</span>
+              <span>read() · write()</span>
+              <span>ioctl()</span>
+            </div>
 
             <h3>
               Linux Device Driver
             </h3>
 
-
             <p>
-              A loadable Linux character-device
-              driver developed in C.
+              A loadable Linux character-device driver
+              written in C with user-space testing for
+              read, write, and ioctl operations.
 
-              Demonstrates Linux kernel-module
-              programming, user-space testing,
-              and read, write, and ioctl operations.
-
-              Explores communication between
-              user-space applications and
-              kernel components.
+              Explores kernel-to-user-space interaction.
             </p>
 
-
             <div class="tags">
-
               <span>C</span>
               <span>Linux Kernel</span>
               <span>Device Drivers</span>
-              <span>Systems Programming</span>
               <span>Make</span>
-
             </div>
-
 
             <div class="project-links">
 
               <a
-                href="https://github.com/lraya7/assignment6-device-driver"
+                href="https://github.com/leslieraya555/assignment6-device-driver"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Repository ↗
+                Repository ↗
               </a>
 
             </div>
@@ -721,17 +651,15 @@
 
         </div>
 
-
-        <!-- MORE PROJECTS -->
         <div class="section-footer">
 
           <a
-            href="https://github.com/leslieraya555?tab=repositories"
             class="text-link"
+            href="https://github.com/leslieraya555?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Explore All GitHub Projects ↗
+            View All My GitHub Projects ↗
           </a>
 
         </div>
@@ -740,246 +668,130 @@
 
     </section>
 
+    <!-- =====================================
+         SKILLS
+    ====================================== -->
 
-
-    <!-- ==========================================
-         SECTION 3 — TECHNICAL SKILLS
-    ========================================== -->
-
-    <section
-      class="section section-alt"
-      id="skills"
-    >
+    <section class="section section-alt" id="skills">
 
       <div class="container">
-
 
         <div class="section-heading">
 
           <p class="eyebrow">
-            02 / Technical Expertise
+            02 / Technical Toolkit
           </p>
 
           <h2>
-            Programming Languages & Technical Skills
+            Programming Languages &amp; Technical Skills
           </h2>
 
           <p>
-            Technologies, tools, and engineering
-            practices developed through
-            academic coursework,
-            technical projects, and
-            independent learning.
+            Languages, libraries, systems tools,
+            and technical foundations developed through
+            coursework and engineering projects.
           </p>
 
         </div>
 
-
-
         <div class="skills-grid">
 
-
-          <!-- PROGRAMMING LANGUAGES -->
           <div class="skill-card">
-
-            <h3>
-              Programming Languages
-            </h3>
-
+            <h3>Programming Languages</h3>
             <p>
               Python · C · C++ · Java ·
               JavaScript · SQL · Bash
             </p>
-
           </div>
 
-
-
-          <!-- FRONTEND -->
           <div class="skill-card">
-
-            <h3>
-              Frontend Development
-            </h3>
-
+            <h3>Frontend Development</h3>
             <p>
-              HTML5 · CSS3 · JavaScript ·
-              React · Vite ·
-              Responsive Web Design
+              HTML5 · CSS3 · React ·
+              Vite · Responsive Web Design
             </p>
-
           </div>
 
-
-
-          <!-- BACKEND -->
           <div class="skill-card">
-
-            <h3>
-              Backend Development
-            </h3>
-
+            <h3>Backend Development</h3>
             <p>
               Python · FastAPI · REST APIs ·
               Data Validation · API Testing
             </p>
-
           </div>
 
-
-
-          <!-- AI / ML -->
           <div class="skill-card">
-
-            <h3>
-              Artificial Intelligence & Machine Learning
-            </h3>
-
+            <h3>AI &amp; Machine Learning</h3>
             <p>
-              scikit-learn · NumPy · pandas ·
-              Isolation Forest · Anomaly Detection ·
-              Feature Engineering · Model Evaluation
+              scikit-learn · pandas · NumPy ·
+              Feature Engineering · Anomaly Detection ·
+              Model Evaluation
             </p>
-
           </div>
 
-
-
-          <!-- SYSTEMS -->
           <div class="skill-card">
-
-            <h3>
-              Systems Programming
-            </h3>
-
+            <h3>Linux &amp; Systems</h3>
             <p>
-              Linux · Ubuntu · C/C++ ·
-              Linux Kernel Modules · inotify ·
-              Process Monitoring · File Systems
+              Ubuntu · C/C++ · /proc · inotify ·
+              Linux Kernel Modules · Process Monitoring ·
+              File Systems
             </p>
-
           </div>
 
-
-
-          <!-- DEVOPS -->
           <div class="skill-card">
-
-            <h3>
-              DevOps & CI/CD
-            </h3>
-
+            <h3>DevOps &amp; CI/CD</h3>
             <p>
               Git · GitHub · Docker ·
-              GitHub Actions ·
-              Continuous Integration ·
-              CMake · Make
+              GitHub Actions · CMake · Make
             </p>
-
           </div>
 
-
-
-          <!-- TESTING -->
           <div class="skill-card">
-
-            <h3>
-              Software Testing
-            </h3>
-
+            <h3>Software Testing</h3>
             <p>
               pytest · Playwright · Unit Testing ·
-              Integration Testing ·
-              End-to-End Testing
+              Integration Testing · End-to-End Testing
             </p>
-
           </div>
 
-
-
-          <!-- DATABASES -->
           <div class="skill-card">
-
-            <h3>
-              Databases
-            </h3>
-
+            <h3>Databases</h3>
             <p>
-              SQL · MySQL ·
-              Database Management ·
-              Relational Database Design
+              SQL · MySQL · Relational Database Design
             </p>
-
           </div>
 
-
-
-          <!-- CS FUNDAMENTALS -->
           <div class="skill-card">
-
-            <h3>
-              Computer Science Fundamentals
-            </h3>
-
+            <h3>Computer Science</h3>
             <p>
-              Data Structures · Algorithms ·
-              Object-Oriented Programming ·
-              Operating Systems ·
-              Software Engineering
+              Data Structures · Algorithms · OOP ·
+              Operating Systems · Software Engineering · HCI
             </p>
-
           </div>
 
-
-
-          <!-- DEVELOPMENT TOOLS -->
           <div class="skill-card">
-
-            <h3>
-              Development Tools
-            </h3>
-
+            <h3>Developer Tools</h3>
             <p>
-              Visual Studio Code ·
-              Jupyter Notebook · GitHub ·
-              Linux Terminal
+              Visual Studio Code · Jupyter Notebook ·
+              GitHub · Linux Terminal
             </p>
-
           </div>
 
-
-
-          <!-- CLOUD -->
           <div class="skill-card">
-
-            <h3>
-              Cloud Technologies
-            </h3>
-
+            <h3>Cloud Concepts</h3>
             <p>
-              AWS Fundamentals ·
-              Cloud Architecture Concepts ·
-              Containerization · Deployment
+              AWS Fundamentals · Cloud Architecture ·
+              Containers · Deployment
             </p>
-
           </div>
 
-
-
-          <!-- PRODUCTIVITY -->
           <div class="skill-card">
-
-            <h3>
-              Microsoft & Productivity Tools
-            </h3>
-
+            <h3>Productivity Tools</h3>
             <p>
-              Microsoft Word · Excel ·
-              PowerPoint · Outlook ·
-              Microsoft 365 · Google Docs ·
-              Google Sheets
+              Microsoft Word · Excel · PowerPoint ·
+              Outlook · Microsoft 365 ·
+              Google Docs · Google Sheets
             </p>
-
           </div>
 
         </div>
@@ -988,16 +800,13 @@
 
     </section>
 
-
-
-    <!-- ==========================================
-         SECTION 4 — ABOUT ME
-    ========================================== -->
+    <!-- =====================================
+         ABOUT
+    ====================================== -->
 
     <section class="section" id="about">
 
       <div class="container about-grid">
-
 
         <div class="section-heading">
 
@@ -1012,48 +821,29 @@
 
         </div>
 
-
         <div class="about-copy">
 
           <p>
             I'm a Computer Science student at
             San Francisco State University
-            with a strong interest in
-            software engineering,
-            artificial intelligence,
-            machine learning, data science,
+            with a strong interest in software
+            engineering, data science, AI/ML,
             and operating systems.
           </p>
 
-
           <p>
-            I enjoy building software that
-            solves practical problems,
-            particularly applications combining
-            low-level systems programming
-            with machine learning and
-            intuitive user interfaces.
+            In MemoryMedic AI 2.0 and FileSentinel AI,
+            I've combined Linux monitoring with backend
+            services, machine-learning experiments,
+            testing, and web dashboards.
           </p>
 
-
           <p>
-            Through projects such as
-            MemoryMedic AI 2.0 and
-            FileSentinel AI, I've worked with
-            Linux monitoring, anomaly detection,
-            backend development,
-            automated testing,
-            and frontend dashboards.
-          </p>
-
-
-          <p>
-            My goal is to continue growing
-            as a software engineer while
-            contributing to meaningful
-            technical projects involving
-            intelligent systems and
-            data-driven applications.
+            I value readable code, reproducible
+            evaluations, and useful software.
+            I'm looking for opportunities to contribute
+            to a team, build reliable tools,
+            and continue learning.
           </p>
 
         </div>
@@ -1062,44 +852,27 @@
 
     </section>
 
+    <!-- =====================================
+         EDUCATION AND CERTIFICATIONS
+    ====================================== -->
 
-
-    <!-- ==========================================
-         SECTION 5 — EDUCATION
-    ========================================== -->
-
-    <section
-      class="section section-alt"
-      id="education"
-    >
+    <section class="section section-alt" id="education">
 
       <div class="container">
-
 
         <div class="section-heading">
 
           <p class="eyebrow">
-            04 / Academic Background
+            04 / Background
           </p>
 
           <h2>
-            Education & Professional Development
+            Education &amp; Professional Development
           </h2>
-
-          <p>
-            My academic background,
-            technical training, and
-            continuous learning
-            in software engineering
-            and computer science.
-          </p>
 
         </div>
 
-
-
         <div class="education-grid">
-
 
           <!-- UNIVERSITY -->
           <div class="education-card">
@@ -1108,85 +881,54 @@
               UNIVERSITY
             </p>
 
-
             <h3>
               San Francisco State University
             </h3>
 
-
             <p>
-              Bachelor of Science
-              in Computer Science
+              Bachelor of Science in Computer Science
             </p>
-
 
             <p class="subtle">
               Expected Graduation: May 2027
             </p>
 
-
             <h4>
               Relevant Coursework
             </h4>
 
-
             <p>
               Analysis of Algorithms ·
-              Data Structures ·
-              Database Systems ·
-              Operating Systems ·
-              Software Engineering ·
-              Artificial Intelligence ·
-              Machine Learning ·
+              Data Structures · Database Systems ·
+              Operating Systems · Software Engineering ·
+              Artificial Intelligence · Machine Learning ·
               Human-Computer Interaction
             </p>
 
           </div>
 
-
-
-          <!-- CERTIFICATIONS -->
+          <!-- PROFESSIONAL DEVELOPMENT -->
           <div class="education-card">
 
             <p class="card-kicker">
-              PROFESSIONAL DEVELOPMENT
+              CERTIFICATES &amp; LEARNING
             </p>
-
 
             <h3>
-              Certifications & Specialized Learning
+              Technical Professional Development
             </h3>
 
-
             <p>
-              IBM Generative AI Engineering
+              IBM Generative AI Engineering ·
+              IBM Software Engineering ·
+              IBM DevOps &amp; Software Engineering ·
+              Machine Learning Specialization ·
+              AWS cloud learning
             </p>
-
-
-            <p>
-              IBM Software Engineering
-            </p>
-
-
-            <p>
-              IBM DevOps & Software Engineering
-            </p>
-
-
-            <p>
-              Machine Learning Specialization
-            </p>
-
-
-            <p>
-              AWS Cloud Learning
-            </p>
-
 
             <p class="subtle">
-              Credential verification links
-              can be added for completed
-              certifications.
+              Individual credential verification links
+              and completion dates can be added here.
             </p>
 
           </div>
@@ -1197,74 +939,54 @@
 
     </section>
 
-
-
-    <!-- ==========================================
-         SECTION 6 — CONTACT
-    ========================================== -->
+    <!-- =====================================
+         CONTACT
+    ====================================== -->
 
     <section class="section" id="contact">
 
       <div class="container">
 
-
         <div class="contact-panel">
 
           <p class="eyebrow">
-            05 / Get in Touch
+            05 / Contact
           </p>
-
 
           <h2>
             Let's build something meaningful.
           </h2>
 
-
           <p>
             I'm interested in software engineering,
-            artificial intelligence,
-            machine learning, data science,
-            and systems engineering opportunities.
-          </p>
+            AI/ML, and systems opportunities.
 
-
-          <p>
-            I'm interested in connecting
-            with engineers, recruiters,
-            and professionals working
+            I'd love to connect with engineers,
+            recruiters, and collaborators working
             on interesting technical problems.
           </p>
 
-
           <div class="button-row">
 
-
-            <!-- EMAIL -->
             <a
-              href="mailto:leslieraya08@gmail.com"
               class="button button-primary"
+              href="mailto:leslieraya08@gmail.com"
             >
               Email Me ↗
             </a>
 
-
-
-            <!-- GITHUB -->
             <a
-              href="https://github.com/leslieraya555"
               class="button button-secondary"
+              href="https://github.com/leslieraya555"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub ↗
             </a>
 
-
-
-            <!-- LINKEDIN -->
             <a
-              href="https://www.linkedin.com/in/leslie-raya/"
               class="button button-secondary"
+              href="https://www.linkedin.com/in/leslie-raya/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1281,11 +1003,9 @@
 
   </main>
 
-
-
-  <!-- ==========================================
+  <!-- =====================================
        FOOTER
-  ========================================== -->
+  ====================================== -->
 
   <footer class="site-footer">
 
@@ -1293,12 +1013,19 @@
 
       <p>
         © <span id="year">2026</span> Leslie Raya.
-        Built with HTML, CSS & JavaScript.
+        Built with HTML, CSS &amp; JavaScript.
       </p>
 
+      <a
+        href="https://github.com/leslieraya555/leslie-raya-portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Website Source ↗
+      </a>
 
       <a href="#home">
-        Back to Top ↑
+        Back to top ↑
       </a>
 
     </div>
